@@ -2,11 +2,16 @@
     "name": "cssframework",
     "private": true,
     "version": "1.0.0",
+    "type": "module",
     "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
     },
     "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19",
     "vite": "^5.0.0"
     }
 }
